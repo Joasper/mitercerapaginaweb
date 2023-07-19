@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* pink */
+
+  --Pink: hsl(322, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Gra-ish-Blue: hsl(208, 11%, 55%);
+
+  /* Fuentes */
+
+  --primary--font: "Open Sans", sans-serif;
+  --headins: "Poppins", sans-serif;
+
+  --padding--container: 80px 0;
+}
+
+body {
+  font-family: var(--primary--font);
+  font-weight: 600;
+}
+
+.container {
+  padding: var(--padding--container);
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  max-width: 200px;
+  width: 60%;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url(../images/bg-hero-mobile.svg);
+  background-color: var(--Very-Pale-Cyan);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  font-family: var(--primary--font);
+  font-weight: 600;
+  background-color: white;
+
+  display: block;
+  padding: 4px 16px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  margin-right: 3px;
+}
+
+.header__texts {
+  text-align: center;
+}
+
+.header__title {
+  font-size: 26px;
+  font-family: var(--headins);
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.header__parrafo {
+  color: var(--Very-Dark-Cyan);
+  font-size: 16px;
+}
+
+.header__main {
+  padding: 40px 0;
+}
+
+.header__ilustration {
+  max-width: 400px;
+
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.header__btn__main {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: var(--Pink);
+  padding: 10px 10px;
+  border-radius: 40px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.img {
+  max-width: 300px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.section__texts {
+  text-align: center;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: var(--headins);
+  font-weight: 600;
+}
+
+.parrafo {
+  margin-top: 20px;
+  font-weight: 400;
+  font-family: var(--primary--font);
+  color: var(--Very-Dark-Cyan);
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.section {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  width: 97%;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.img--flowing {
+  margin-top: 60px;
+}
+
+.img--users {
+  margin-top: 40px;
+}
+
+.section__build {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  padding: 3px 5px;
+  width: 97%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.build__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: var(--headins);
+  font-size: 18px;
+}
+
+.header__btn__main--build {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: var(--Very-Dark-Cyan);
+  position: relative;
+}
+
+.social__link {
+  margin-top: 20px;
+  margin-right: 10px;
+  color: white;
+  max-width: 100px;
+  width: 5%;
+}
+
+.footer__localitacion::after {
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
+  text-align: center;
+  color: white;
+}
+
+.position {
+  position: relative;
+}
+
+.footer__contact {
+  margin-top: 70px;
+}
+
+.footer__cell::after {
+  content: "+1-543-123-4567";
+  color: white;
+}
+
+.footer__email::after {
+  content: "example@huddle.com";
+  color: white;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav__a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: 30px;
+}
+
+.footer__nav {
+  padding: 40px 0;
+}
+
+.footer__container {
+  padding: 70px 0 0 0;
+}
+
+.footer__icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__facebook {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.facebook {
+  width: 40px;
+  display: block;
+  height: auto;
+  padding: 8px 6px 0 8px;
+}
+
+.footer__instagram {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.footer__twitter {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.footer__parrafo__end {
+  color: white;
+  text-align: center;
+}
+
+.footer__end__texts {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.nav__link__two {
+  margin-right: 20px;
+}
+
+.footer__nav__end {
+  margin-right: 50px;
+}
+
+.footer__nav {
+  margin-right: 300px;
+}
+@media (min-width: 800px) {
+  .header__logo {
+    max-width: 1000px;
+    width: 70%;
+  }
+
+  .btn {
+    padding: 9px 46px;
+    font-weight: 300;
+    border-radius: 20px;
+  }
+
+  .header__main {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .header__ilustration {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0;
+    margin: 0 auto;
+  }
+
+  .header__texts {
+    text-align: start;
+    width: 50%;
+  }
+
+  .header__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 34px;
+  }
+
+  .header__btn__main {
+    margin: 0;
+    text-align: center;
+    margin-top: 25px;
+    padding: 16px 20px;
+    width: 65%;
+  }
+
+  .header__parrafo´ {
+    margin-bottom: 10px;
+  }
+
+  .header__section {
+    padding: 80px 0 40px 0;
+  }
+
+  .header__texts {
+    margin-top: 70px;
+  }
+
+  .header {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Very-Pale-Cyan);
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+  }
+
+  .img {
+    max-width: 1000px;
+    width: 70%;
+    padding-top: 30px;
+  }
+
+  .section__texts {
+    text-align: start;
+    padding: 40px;
+    padding: 70px 40px 40px 40px;
+    width: 90%;
+  }
+
+  .section--flowing {
+    flex-direction: row;
+  }
+
+  .img--flowing {
+    padding: 10px 10px 60px 10px;
+  }
+
+  .img--users {
+    padding: 10px 10px 60px 10px;
+  }
+
+  .title {
+    margin-left: 30px;
+  }
+
+  .section__build {
+    width: 40%;
+  }
+
+  .header__btn__main--build {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .social__link {
+    width: 100%;
+    max-width: 20px;
+  }
+
+  .contenedor {
+    display: flex;
+  }
+
+  .footer__container {
+    padding: 80px 0 80px 0;
+  }
+
+  .footer__nav {
+    margin-top: 80px;
+    margin-left: 100px;
+  }
+
+  .nav__link__two {
+    margin-top: 120px;
+    margin-right: 100px;
+  }
+
+  .footer__end {
+    margin-top: 200px;
+  }
+
+  .footer__redes {
+    padding: 80px 0 0 0;
+  }
+
+  .footer__parrafo__end {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer__icon {
+    margin-top: 90px;
+  }
+}
