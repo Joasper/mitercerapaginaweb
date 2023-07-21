@@ -361,7 +361,7 @@ body {
   .section {
     display: flex;
     flex-direction: row-reverse;
-    height: 400px;
+    height: auto;
   }
 
   .img {
@@ -417,13 +417,17 @@ body {
   }
 
   .footer__nav {
-    margin-top: 80px;
-    padding-left: 400px;
+    padding-top: 100px;
+    padding-left: 100px;
+    margin-right: 0;
+    min-width: 300px;
   }
 
   .nav__link__two {
-    margin-top: 120px;
-    padding-right: 400px;
+    padding-top: 100px;
+    padding-left: 100px;
+    margin-right: 0;
+    min-width: 250px;
   }
 
   .footer__end {
@@ -443,7 +447,11 @@ body {
     margin-top: 90px;
   }
 
-  .footer__nav__end {
-    margin: 0;
+  .footer_nav {
+    margin-right: 0;
+  }
+
+  .footer__social {
+    min-width: 100px;
   }
 }
