@@ -144,7 +144,7 @@ body {
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
   width: 97%;
   margin: 0 auto;
-  height: 500px;
+  height: auto;
 }
 
 .img--flowing {
@@ -418,12 +418,12 @@ body {
 
   .footer__nav {
     margin-top: 80px;
-    margin-left: 100px;
+    padding-left: 400px;
   }
 
   .nav__link__two {
     margin-top: 120px;
-    margin-right: 100px;
+    padding-right: 400px;
   }
 
   .footer__end {
@@ -441,5 +441,9 @@ body {
 
   .footer__icon {
     margin-top: 90px;
+  }
+
+  .footer__nav__end {
+    margin: 0;
   }
 }
